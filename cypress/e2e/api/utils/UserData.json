@@ -1,0 +1,12 @@
+{
+    "user1": {
+        "id": 12139921309,
+        "username": "testuser",
+        "firstName": "Tolunay",
+        "lastName": "Aktas",
+        "email": "tolunay@test.com",
+        "password": "Tolunay123%",
+        "phone": "905501230000",
+        "userStatus": 1
+    }    
+}

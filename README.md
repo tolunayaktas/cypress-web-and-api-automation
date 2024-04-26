@@ -1,2 +1,2 @@
 # cypress-web-and-api-automation
-Web UI and API automations with Cypress
+Includes Web UI automation of an airline company and also API automation with user-CRUD tests on a Swagger page.
