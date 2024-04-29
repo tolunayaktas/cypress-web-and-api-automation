@@ -33,7 +33,7 @@ class DetailsPage{
         cy.get('#bs-select-8-228').click()
         cy.get('#txt_CustomerMobile').type("+905551230000")
         cy.get('#txt_CustomerEmail').type("tolunayaktas@email.com")
-        cy.get('.language > .col-xs-12 > .validated-control-wrapper > .control > .dropdown > .btn').click()
+        cy.get('.language > .col-xs-12 > .validated-control-wrapper > .control > .dropdown > .btn > .filter-option').click()
         cy.wait(500);
         cy.get('#bs-select-9-1')
         return this;
@@ -45,19 +45,19 @@ class DetailsPage{
     }
 
     checkOptionsHeader(){
-        cy.get('#booking-step-title').should('be.visible')
+        cy.get('.seats > :nth-child(1)').should('be.visible')
         return this;
     }
 
     continueToPayment(){
-        cy.wait(500);
+        cy.wait(1500);
         cy.scrollTo('bottom')
         cy.get('#btn_Continue').click()
         return this;
     }
 
     checkPaymentPage(){
-        cy.get('#booking-step-title').should('be.visible')
+        cy.get('.payment-method-panel > .caption > span').should('be.visible')
         return this;
     }
 }
